@@ -1,1 +1,6 @@
 .sass-cache/
+
+# ignore css and maps, except for prism.css
+*.css
+!prism.css
+*.css.map
