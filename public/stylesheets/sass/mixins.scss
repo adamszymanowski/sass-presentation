@@ -1,0 +1,49 @@
+$cerulean: #00c5cd;
+$dark-purple: #8b2252;
+
+
+@mixin flexbox-direction-justify($direction, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+
+  display: -webkit-flexbox;
+  -webkit-flex-direction: $direction;
+  -webkit-justify-content: $justify;
+
+  border: solid 1px grey;
+  margin: 1em;
+}
+
+
+.flexbox-row-center {
+  @include flexbox-direction-justify(row, center);
+}
+
+.flexbox-row-end {
+  @include flexbox-direction-justify(row, flex-end);
+}
+
+.flexbox-column-end {
+  @include flexbox-direction-justify(column, flex-end);
+  height: 15em;
+}
+
+.flexbox-column-center {
+  @include flexbox-direction-justify(column, center);
+  height: 15em;
+}
+
+.flexbox-column-start {
+  @include flexbox-direction-justify(column, flex-start);
+  height: 15em;
+}
+
+
+.square {
+  margin: 1em;
+  width: 40px;
+  height: 40px;
+  border: solid 10px $dark-purple;
+  background: $cerulean;
+}

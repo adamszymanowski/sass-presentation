@@ -1,0 +1,25 @@
+$cerulean: #00c5cd;
+$dark-purple: #8b2252;
+
+.square {
+  margin: 1em;
+  height: 60px;
+  width: 60px;
+  background: $cerulean;
+  border: solid 3px $dark-purple;
+}
+
+.circle {
+  margin: 1em;
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  background: $cerulean;
+  border: solid 3px $dark-purple;
+}
+
+.heading {
+  margin: 1em;
+  background: $cerulean;
+  color: $dark-purple;
+}

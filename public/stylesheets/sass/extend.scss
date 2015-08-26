@@ -1,0 +1,27 @@
+$cerulean: #00c5cd;
+$dark-purple: #8b2252;
+
+.panel {
+  display: inline-block;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 6px;
+  color: $dark-purple;
+  background: $cerulean;
+}
+
+.small-panel {
+  @extend .panel;
+  font-size: 0.6em;
+}
+
+.medium-panel {
+  @extend .panel;
+  font-size: 1em;
+}
+
+.big-panel {
+  @extend .panel;
+  font-size: 1.6em;
+  font-weight: bold;
+}

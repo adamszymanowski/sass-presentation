@@ -1,0 +1,50 @@
+$cerulean: #00c5cd;
+$dark-purple: #8b2252;
+$height: 30px;
+
+
+.stripe-container {
+  padding: 2em;
+  background: $dark-purple;
+}
+
+.stripe {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.stripe-1 {
+  @extend .stripe;
+  background: $cerulean * 1.2;
+  height: $height + 10;
+}
+
+.stripe-2 {
+  @extend .stripe;
+  background: $cerulean * 1.1;
+  height: $height + 20;
+}
+
+.stripe-3 {
+  @extend .stripe;
+  background: $cerulean * 1;
+  height: $height + 30;
+}
+
+.stripe-4 {
+  @extend .stripe;
+  background: $cerulean * 0.9;
+  height: $height + 40;
+}
+
+.stripe-5 {
+  @extend .stripe;
+  background: $cerulean * 0.8;
+  height: $height + 50;
+}
+
+.stripe-6 {
+  @extend .stripe;
+  background: $cerulean * 0.7;
+  height: $height + 60;
+}

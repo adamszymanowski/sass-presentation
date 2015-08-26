@@ -1,0 +1,26 @@
+$cerulean: #00c5cd;
+$dark-purple: #8b2252;
+
+nav {
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      border-left: solid 2px white;
+
+      a {
+        color: $dark-purple;
+        background: $cerulean;
+
+        &:hover {
+          color: white;
+          background: $dark-purple;
+        }
+      }
+    }
+  }
+
+}
+

@@ -1,0 +1,10 @@
+@import 'circle';
+
+.square {
+  margin: 1em;
+  width: 60px;
+  height: 60px;
+
+  background: $cerulean;
+  border: solid 16px $dark-purple;
+}
