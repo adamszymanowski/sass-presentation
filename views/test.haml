@@ -1,0 +1,51 @@
+!!!
+%html
+  %head
+    %title SASS
+
+    %link{rel: 'stylesheet', href: '/stylesheets/page_main.css'}
+    %link{rel: 'stylesheet', href: '/stylesheets/test.css'}
+
+    %link{rel: 'stylesheet', href: '/stylesheets/prism.css'}
+    %script{src: 'javascripts/prism.js'}
+
+%body
+  .page-nav
+    .page-nav-left
+      %a{href: '/prev'} prev
+    .page-nav-right
+      %a{href: '/next'} next
+
+  .page-wrap
+    .page-body
+      %h1 This is a test.
+      %p It's working!
+
+    .page-code
+      %ul.tabs
+        %li
+          %input{type: 'radio', name: 'tabs', id: 'hide-code'}
+          %label{for: 'hide-code'} HIDE
+          .code-body
+
+        %li
+          %input{type: 'radio', name: 'tabs', id: 'haml'}
+          %label{for: 'haml'} haml
+          .code-body
+            %pre
+              %code.language-haml
+                = haml_code
+        %li
+          %input{type: 'radio', name: 'tabs', id: 'scss'}
+          %label{for: 'scss'} scss
+          .code-body
+            %pre
+              %code.language-scss
+                = scss_code
+        %li
+          %input{type: 'radio', name: 'tabs', id: 'css'}
+          %label{for: 'css'} css
+          .code-body
+            %pre
+              %code.language-css
+                = css_code

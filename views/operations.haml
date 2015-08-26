@@ -1,0 +1,81 @@
+!!!
+%html
+  %head
+    %title SASS - operations
+
+    %link{rel: 'stylesheet', href: '/stylesheets/page_main.css'}
+    %link{rel: 'stylesheet', href: '/stylesheets/operations.css'}
+
+    %link{rel: 'stylesheet', href: '/stylesheets/prism.css'}
+    %script{src: 'javascripts/prism.js'}
+
+%body
+  .page-nav
+    .page-nav-left
+      %a{href: '/mixins'} mixins
+    .page-nav-right
+      %a{href: '/operations'} _
+
+
+  .page-wrap
+    .page-body
+      %h1 Operations
+
+      .stripe-container
+        .stripe-1
+        .stripe-2
+        .stripe-3
+        .stripe-4
+        .stripe-5
+        .stripe-6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .page-code
+      %ul.tabs
+        %li
+          %input{type: 'radio', name: 'tabs', id: 'hide-code'}
+          %label{for: 'hide-code'} HIDE
+          .code-body
+
+        %li
+          %input{type: 'radio', name: 'tabs', id: 'haml'}
+          %label{for: 'haml'} haml
+          .code-body
+            %pre
+              %code.language-haml
+                = haml_code
+        %li
+          %input{type: 'radio', name: 'tabs', id: 'scss'}
+          %label{for: 'scss'} scss
+          .code-body
+            %pre
+              %code.language-scss
+                = scss_code
+        %li
+          %input{type: 'radio', name: 'tabs', id: 'css'}
+          %label{for: 'css'} css
+          .code-body
+            %pre
+              %code.language-css
+                = css_code

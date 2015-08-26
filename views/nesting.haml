@@ -1,0 +1,76 @@
+!!!
+%html
+  %head
+    %title SASS - nesting
+
+    %link{rel: 'stylesheet', href: '/stylesheets/page_main.css'}
+    %link{rel: 'stylesheet', href: '/stylesheets/nesting.css'}
+
+    %link{rel: 'stylesheet', href: '/stylesheets/prism.css'}
+    %script{src: 'javascripts/prism.js'}
+
+%body
+  .page-nav
+    .page-nav-left
+      %a{href: '/variables'} variables
+    .page-nav-right
+      %a{href: '/partials'} partials
+
+
+  .page-wrap
+    .page-body
+      %h1 Nesting
+
+
+    %nav
+      %ul
+        %li 
+          %a{href: '/nesting'} Home
+        %li
+          %a{href: '/nesting'} Learn SASS 
+        %li
+          %a{href: '/nesting'} Contact
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .page-code
+      %ul.tabs
+        %li
+          %input{type: 'radio', name: 'tabs', id: 'hide-code'}
+          %label{for: 'hide-code'} HIDE
+          .code-body
+
+        %li
+          %input{type: 'radio', name: 'tabs', id: 'haml'}
+          %label{for: 'haml'} haml
+          .code-body
+            %pre
+              %code.language-haml
+                = haml_code
+        %li
+          %input{type: 'radio', name: 'tabs', id: 'scss'}
+          %label{for: 'scss'} scss
+          .code-body
+            %pre
+              %code.language-scss
+                = scss_code
+        %li
+          %input{type: 'radio', name: 'tabs', id: 'css'}
+          %label{for: 'css'} css
+          .code-body
+            %pre
+              %code.language-css
+                = css_code

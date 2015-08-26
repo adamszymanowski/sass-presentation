@@ -1,0 +1,68 @@
+!!!
+%html
+  %head
+    %title SASS - variables
+
+    %link{rel: 'stylesheet', href: '/stylesheets/page_main.css'}
+    %link{rel: 'stylesheet', href: '/stylesheets/variables.css'}
+
+    %link{rel: 'stylesheet', href: '/stylesheets/prism.css'}
+    %script{src: 'javascripts/prism.js'}
+
+%body
+  .page-nav
+    .page-nav-left
+      %a{href: '/'} intro
+    .page-nav-right
+      %a{href: '/nesting'} nesting
+
+
+  .page-wrap
+    .page-body
+      %h1 Variables
+
+      %div.square
+      .square
+
+      .circle
+
+      %h2.heading This is a header.
+
+
+
+
+
+
+
+
+
+
+
+    .page-code
+      %ul.tabs
+        %li
+          %input{type: 'radio', name: 'tabs', id: 'hide-code'}
+          %label{for: 'hide-code'} HIDE
+          .code-body
+
+        %li
+          %input{type: 'radio', name: 'tabs', id: 'haml'}
+          %label{for: 'haml'} haml
+          .code-body
+            %pre
+              %code.language-haml
+                = haml_code
+        %li
+          %input{type: 'radio', name: 'tabs', id: 'scss'}
+          %label{for: 'scss'} scss
+          .code-body
+            %pre
+              %code.language-scss
+                = scss_code
+        %li
+          %input{type: 'radio', name: 'tabs', id: 'css'}
+          %label{for: 'css'} css
+          .code-body
+            %pre
+              %code.language-css
+                = css_code
