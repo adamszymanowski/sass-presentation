@@ -1,5 +1,5 @@
 $cerulean: #00c5cd;
-$dark-purple: #8b2252;
+$deep-red: #8b2252;
 
 nav {
 
@@ -11,12 +11,12 @@ nav {
       border-left: solid 2px white;
 
       a {
-        color: $dark-purple;
+        color: $deep-red;
         background: $cerulean;
 
         &:hover {
           color: white;
-          background: $dark-purple;
+          background: $deep-red;
         }
       }
     }

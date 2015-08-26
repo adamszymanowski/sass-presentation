@@ -1,5 +1,5 @@
 $cerulean: #00c5cd;
-$dark-purple: #8b2252;
+$deep-red: #8b2252;
 
 .circle {
   width: 60px;
@@ -7,6 +7,6 @@ $dark-purple: #8b2252;
   border-radius: 60px;
   margin: 1em;
 
-  background: $dark-purple;
+  background: $deep-red;
   border: solid 16px $cerulean;
 }

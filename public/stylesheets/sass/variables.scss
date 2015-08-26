@@ -1,12 +1,12 @@
 $cerulean: #00c5cd;
-$dark-purple: #8b2252;
+$deep-red: #8b2252;
 
 .square {
   margin: 1em;
   height: 60px;
   width: 60px;
   background: $cerulean;
-  border: solid 3px $dark-purple;
+  border: solid 3px $deep-red;
 }
 
 .circle {
@@ -15,11 +15,11 @@ $dark-purple: #8b2252;
   width: 60px;
   border-radius: 60px;
   background: $cerulean;
-  border: solid 3px $dark-purple;
+  border: solid 3px $deep-red;
 }
 
 .heading {
   margin: 1em;
   background: $cerulean;
-  color: $dark-purple;
+  color: $deep-red;
 }

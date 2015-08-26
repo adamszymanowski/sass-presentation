@@ -1,5 +1,5 @@
 $cerulean: #00c5cd;
-$dark-purple: #8b2252;
+$deep-red: #8b2252;
 
 
 @mixin flexbox-direction-justify($direction, $justify) {
@@ -44,6 +44,6 @@ $dark-purple: #8b2252;
   margin: 1em;
   width: 40px;
   height: 40px;
-  border: solid 10px $dark-purple;
+  border: solid 10px $deep-red;
   background: $cerulean;
 }
