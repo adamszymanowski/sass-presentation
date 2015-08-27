@@ -15,7 +15,7 @@ def read_scss(name)
 end
 
 def read_css(name)
-  File.read(File.join('public/stylesheets', 'variables.css'))
+  File.read(File.join('public/stylesheets', "#{name}.css"))
 end
 
 
